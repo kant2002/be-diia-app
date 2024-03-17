@@ -2,20 +2,20 @@ import { AsyncLocalStorage } from 'async_hooks'
 
 import { AwilixError, asClass, asFunction, asValue } from 'awilix'
 
-import Logger from '@diia-inhouse/diia-logger'
-import { MetricsService } from '@diia-inhouse/diia-metrics'
-import { EnvService } from '@diia-inhouse/env'
-import { HealthCheck } from '@diia-inhouse/healthcheck'
-import { mockClass } from '@diia-inhouse/test'
-import { AlsData, SessionType } from '@diia-inhouse/types'
-import { AppValidator } from '@diia-inhouse/validators'
+import Logger from '@kant2002-diia-inhouse/diia-logger'
+import { MetricsService } from '@kant2002-diia-inhouse/diia-metrics'
+import { EnvService } from '@kant2002-diia-inhouse/env'
+import { HealthCheck } from '@kant2002-diia-inhouse/healthcheck'
+import { mockClass } from '@kant2002-diia-inhouse/test'
+import { AlsData, SessionType } from '@kant2002-diia-inhouse/types'
+import { AppValidator } from '@kant2002-diia-inhouse/validators'
 
 import { ActionFactory, Application, BaseConfig, BaseDeps, DepsFactoryFn, MoleculerService } from '../../src'
 import { GrpcClientFactory } from '../../src/grpc/grpcClient'
 import { configFactory } from '../mocks'
 
-jest.mock('@diia-inhouse/redis', () => {
-    const { CacheService, PubSubService, RedlockService, StoreService, ...rest } = jest.requireActual('@diia-inhouse/redis')
+jest.mock('@kant2002-diia-inhouse/redis', () => {
+    const { CacheService, PubSubService, RedlockService, StoreService, ...rest } = jest.requireActual('@kant2002-diia-inhouse/redis')
 
     return {
         ...rest,
@@ -26,7 +26,7 @@ jest.mock('@diia-inhouse/redis', () => {
     }
 })
 
-jest.mock('@diia-inhouse/diia-queue', () => {
+jest.mock('@kant2002-diia-inhouse/diia-queue', () => {
     const {
         ExternalCommunicator,
         ExternalCommunicatorChannel,
@@ -39,7 +39,7 @@ jest.mock('@diia-inhouse/diia-queue', () => {
         Task,
         QueueConnectionType,
         ...rest
-    } = jest.requireActual('@diia-inhouse/diia-queue')
+    } = jest.requireActual('@kant2002-diia-inhouse/diia-queue')
 
     return {
         ...rest,

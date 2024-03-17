@@ -1,7 +1,7 @@
 import { MethodDefinition } from '@grpc/grpc-js'
 
-import { ActionArguments, ActionVersion, GenericObject, PublicServiceCode, SessionType } from '@diia-inhouse/types'
-import { ValidationRule, ValidationSchema } from '@diia-inhouse/validators'
+import { ActionArguments, ActionVersion, GenericObject, PublicServiceCode, SessionType } from '@kant2002-diia-inhouse/types'
+import { ValidationRule, ValidationSchema } from '@kant2002-diia-inhouse/validators'
 
 export interface AppAction {
     sessionType: SessionType

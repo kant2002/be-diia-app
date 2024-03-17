@@ -1,6 +1,6 @@
 import { Validator } from 'moleculer'
 
-import { AppValidator, ValidationSchema } from '@diia-inhouse/validators'
+import { AppValidator, ValidationSchema } from '@kant2002-diia-inhouse/validators'
 
 export default class MoleculerValidator extends Validator {
     constructor(private readonly validator: AppValidator) {

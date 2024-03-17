@@ -4,8 +4,8 @@ import { ROOT_CONTEXT, SpanKind, context, propagation, trace } from '@openteleme
 import { SemanticAttributes } from '@opentelemetry/semantic-conventions'
 import { merge } from 'lodash'
 
-import { MetricsService, RequestMechanism, RequestStatus } from '@diia-inhouse/diia-metrics'
-import { RedlockService } from '@diia-inhouse/redis'
+import { MetricsService, RequestMechanism, RequestStatus } from '@kant2002-diia-inhouse/diia-metrics'
+import { RedlockService } from '@kant2002-diia-inhouse/redis'
 import {
     AcquirerSession,
     ActionArguments,
@@ -19,10 +19,10 @@ import {
     SessionType,
     TemporarySession,
     UserSession,
-} from '@diia-inhouse/types'
-import { ActHeaders, GenericObject } from '@diia-inhouse/types/dist/types/common'
-import { convertParamsByRules, utils } from '@diia-inhouse/utils'
-import { AppValidator, ValidationSchema } from '@diia-inhouse/validators'
+} from '@kant2002-diia-inhouse/types'
+import { ActHeaders, GenericObject } from '@kant2002-diia-inhouse/types/dist/types/common'
+import { convertParamsByRules, utils } from '@kant2002-diia-inhouse/utils'
+import { AppValidator, ValidationSchema } from '@kant2002-diia-inhouse/validators'
 
 import { actionTypesToJson } from './actionJsonConvertor'
 import { ActionValidationRules, AppAction } from './interfaces'

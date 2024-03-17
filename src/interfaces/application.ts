@@ -2,8 +2,8 @@
 import { AwilixContainer, BuildResolverOptions, Resolver } from 'awilix'
 import { NameFormatter } from 'awilix/lib/load-modules'
 
-import { EnvService } from '@diia-inhouse/env'
-import { GenericObject } from '@diia-inhouse/types'
+import { EnvService } from '@kant2002-diia-inhouse/env'
+import { GenericObject } from '@kant2002-diia-inhouse/types'
 
 import { BaseConfig } from './config'
 import { BaseDeps, ExternallyRegisteredDeps, InternallyRegisteredDeps } from './deps'

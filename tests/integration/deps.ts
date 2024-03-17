@@ -1,7 +1,7 @@
 import { asClass, asFunction } from 'awilix'
 
-import { CryptoDeps, HashService, IdentifierService } from '@diia-inhouse/crypto'
-import TestKit from '@diia-inhouse/test'
+import { CryptoDeps, HashService, IdentifierService } from '@kant2002-diia-inhouse/crypto'
+import TestKit from '@kant2002-diia-inhouse/test'
 
 import { DepsFactoryFn, DepsResolver, GrpcClientFactory } from '../../src'
 import { TestDefinition } from '../../src/generated'

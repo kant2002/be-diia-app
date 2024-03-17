@@ -7,10 +7,10 @@ import { CompatServiceDefinition } from 'nice-grpc/lib/service-definitions'
 import { deadlineMiddleware } from 'nice-grpc-client-middleware-deadline'
 import protobuf from 'protobufjs'
 
-import { MetricsService, RequestMechanism, RequestStatus } from '@diia-inhouse/diia-metrics'
-import { QueueContext } from '@diia-inhouse/diia-queue'
-import { LogData, Logger } from '@diia-inhouse/types'
-import { utils } from '@diia-inhouse/utils'
+import { MetricsService, RequestMechanism, RequestStatus } from '@kant2002-diia-inhouse/diia-metrics'
+import { QueueContext } from '@kant2002-diia-inhouse/diia-queue'
+import { LogData, Logger } from '@kant2002-diia-inhouse/types'
+import { utils } from '@kant2002-diia-inhouse/utils'
 
 import { CallOptions, GrpcClientMetadata } from '../interfaces'
 

@@ -6,12 +6,12 @@ import { AsyncLocalStorage } from 'async_hooks'
 
 import { Service } from 'moleculer'
 
-import Logger from '@diia-inhouse/diia-logger'
-import { MetricsService } from '@diia-inhouse/diia-metrics'
-import { EnvService } from '@diia-inhouse/env'
-import { mockInstance } from '@diia-inhouse/test'
-import { ActionVersion, AlsData } from '@diia-inhouse/types'
-import { AppValidator } from '@diia-inhouse/validators'
+import Logger from '@kant2002-diia-inhouse/diia-logger'
+import { MetricsService } from '@kant2002-diia-inhouse/diia-metrics'
+import { EnvService } from '@kant2002-diia-inhouse/env'
+import { mockInstance } from '@kant2002-diia-inhouse/test'
+import { ActionVersion, AlsData } from '@kant2002-diia-inhouse/types'
+import { AppValidator } from '@kant2002-diia-inhouse/validators'
 
 import { ActionFactory, AppApiService, ConfigFactoryFn, MoleculerService } from '../../../src'
 import { appAction, appApiService, configFactory } from '../../mocks'

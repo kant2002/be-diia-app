@@ -1,6 +1,6 @@
 import ts from 'typescript'
 
-import { Env } from '@diia-inhouse/env'
+import { Env } from '@kant2002-diia-inhouse/env'
 
 import openApiPlugin from '../../../../src/plugins/openapi'
 import ActionVisitor from '../../../../src/plugins/openapi/actionVisitor'

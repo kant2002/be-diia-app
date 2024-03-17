@@ -2,7 +2,7 @@
 import * as dotenv from 'dotenv-flow'
 import * as ts from 'typescript'
 
-import { Env } from '@diia-inhouse/env'
+import { Env } from '@kant2002-diia-inhouse/env'
 
 import ActionVisitor from './actionVisitor'
 

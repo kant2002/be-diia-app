@@ -1,7 +1,7 @@
 import { CallOptions as DefaultGrpcCallOptions } from 'nice-grpc'
 
-import { ActionVersion } from '@diia-inhouse/types'
-import { ActionSession } from '@diia-inhouse/types/dist/types/session/session'
+import { ActionVersion } from '@kant2002-diia-inhouse/types'
+import { ActionSession } from '@kant2002-diia-inhouse/types/dist/types/session/session'
 
 export interface GrpcClientMetadata {
     session?: ActionSession

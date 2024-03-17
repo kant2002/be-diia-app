@@ -1,6 +1,6 @@
 import { createServer } from 'nice-grpc'
 
-import { DurationMs } from '@diia-inhouse/types'
+import { DurationMs } from '@kant2002-diia-inhouse/types'
 
 import { Application, CallOptions, ServiceContext, clientCallOptions } from '../../src'
 import { TestClient, TestDefinition, TestRequest, TestResponse } from '../../src/generated/tests'

@@ -1,9 +1,9 @@
-import { CryptoDeps } from '@diia-inhouse/crypto'
-import { DatabaseService } from '@diia-inhouse/db'
-import { QueueDeps } from '@diia-inhouse/diia-queue'
-import { HealthCheck } from '@diia-inhouse/healthcheck'
-import { RedisDeps } from '@diia-inhouse/redis'
-import TestKit from '@diia-inhouse/test'
+import { CryptoDeps } from '@kant2002-diia-inhouse/crypto'
+import { DatabaseService } from '@kant2002-diia-inhouse/db'
+import { QueueDeps } from '@kant2002-diia-inhouse/diia-queue'
+import { HealthCheck } from '@kant2002-diia-inhouse/healthcheck'
+import { RedisDeps } from '@kant2002-diia-inhouse/redis'
+import TestKit from '@kant2002-diia-inhouse/test'
 
 import { AppConfig } from './config'
 

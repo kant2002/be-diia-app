@@ -4,8 +4,8 @@ const kleur = { enabled: true }
 
 jest.mock('kleur', () => kleur)
 
-import Logger from '@diia-inhouse/diia-logger'
-import { mockInstance } from '@diia-inhouse/test'
+import Logger from '@kant2002-diia-inhouse/diia-logger'
+import { mockInstance } from '@kant2002-diia-inhouse/test'
 
 import MoleculerLogger from '../../../src/moleculer/moleculerLogger'
 

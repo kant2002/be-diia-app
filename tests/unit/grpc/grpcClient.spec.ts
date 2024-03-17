@@ -1,9 +1,9 @@
 import { CallOptions, ClientMiddleware, ClientMiddlewareCall } from 'nice-grpc'
 
-import DiiaLogger from '@diia-inhouse/diia-logger'
-import { MetricsService } from '@diia-inhouse/diia-metrics'
-import TestKit, { mockInstance } from '@diia-inhouse/test'
-import { ActionVersion } from '@diia-inhouse/types'
+import DiiaLogger from '@kant2002-diia-inhouse/diia-logger'
+import { MetricsService } from '@kant2002-diia-inhouse/diia-metrics'
+import TestKit, { mockInstance } from '@kant2002-diia-inhouse/test'
+import { ActionVersion } from '@kant2002-diia-inhouse/types'
 
 import { GrpcClientFactory, clientCallOptions } from '../../../src/grpc/grpcClient'
 

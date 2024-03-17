@@ -1,6 +1,6 @@
 import { IWrapper, Message, Type } from 'protobufjs'
 
-import { GenericObject } from '@diia-inhouse/types/dist/types/common'
+import { GenericObject } from '@kant2002-diia-inhouse/types/dist/types/common'
 
 export default {
     '.google.protobuf.Timestamp': <IWrapper>{

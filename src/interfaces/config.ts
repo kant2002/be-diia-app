@@ -1,5 +1,5 @@
-import { MetricsConfig as CustomMetricsConfig } from '@diia-inhouse/diia-metrics'
-import { GenericObject, HttpMethod } from '@diia-inhouse/types'
+import { MetricsConfig as CustomMetricsConfig } from '@kant2002-diia-inhouse/diia-metrics'
+import { GenericObject, HttpMethod } from '@kant2002-diia-inhouse/types'
 
 export interface CorsConfig {
     // Configures the Access-Control-Allow-Origin CORS header.

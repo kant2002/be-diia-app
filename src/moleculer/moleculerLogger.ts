@@ -1,7 +1,7 @@
 import kleur from 'kleur'
 import { LogLevels, Loggers } from 'moleculer'
 
-import { LogLevel, Logger } from '@diia-inhouse/types'
+import { LogLevel, Logger } from '@kant2002-diia-inhouse/types'
 
 export default class MoleculerLogger extends Loggers.Base {
     private readonly brokerLogLevelsMap: Record<LogLevels, LogLevel> = {

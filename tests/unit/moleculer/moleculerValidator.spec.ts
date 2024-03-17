@@ -1,6 +1,6 @@
-import { IdentifierService } from '@diia-inhouse/crypto'
-import TestKit, { mockInstance } from '@diia-inhouse/test'
-import { AppValidator, ValidationSchema } from '@diia-inhouse/validators'
+import { IdentifierService } from '@kant2002-diia-inhouse/crypto'
+import TestKit, { mockInstance } from '@kant2002-diia-inhouse/test'
+import { AppValidator, ValidationSchema } from '@kant2002-diia-inhouse/validators'
 
 import MoleculerValidator from '../../../src/moleculer/moleculerValidator'
 

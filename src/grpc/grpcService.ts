@@ -22,10 +22,10 @@ import { glob } from 'glob'
 import { uniq } from 'lodash'
 import protobuf from 'protobufjs'
 
-import { MetricsService, RequestMechanism } from '@diia-inhouse/diia-metrics'
-import { EnvService } from '@diia-inhouse/env'
-import { ApiError, HttpError } from '@diia-inhouse/errors'
-import { RedlockService } from '@diia-inhouse/redis'
+import { MetricsService, RequestMechanism } from '@kant2002-diia-inhouse/diia-metrics'
+import { EnvService } from '@kant2002-diia-inhouse/env'
+import { ApiError, HttpError } from '@kant2002-diia-inhouse/errors'
+import { RedlockService } from '@kant2002-diia-inhouse/redis'
 import {
     ActionVersion,
     AlsData,
@@ -37,12 +37,12 @@ import {
     OnInit,
     PlatformType,
     PublicServiceCode,
-} from '@diia-inhouse/types'
-import { ActHeaders, GenericObject } from '@diia-inhouse/types/dist/types/common'
-import { OnDestroy } from '@diia-inhouse/types/dist/types/interfaces/onDestroy'
-import { ActionSession } from '@diia-inhouse/types/dist/types/session/session'
-import { utils } from '@diia-inhouse/utils'
-import { AppValidator } from '@diia-inhouse/validators'
+} from '@kant2002-diia-inhouse/types'
+import { ActHeaders, GenericObject } from '@kant2002-diia-inhouse/types/dist/types/common'
+import { OnDestroy } from '@kant2002-diia-inhouse/types/dist/types/interfaces/onDestroy'
+import { ActionSession } from '@kant2002-diia-inhouse/types/dist/types/session/session'
+import { utils } from '@kant2002-diia-inhouse/utils'
+import { AppValidator } from '@kant2002-diia-inhouse/validators'
 
 import { DiiaActionExecutor } from '../actionExecutor'
 import ActionFactory from '../actionFactory'
@@ -108,7 +108,7 @@ export class GrpcService implements OnInit, OnDestroy, OnHealthCheck {
             return
         }
 
-        const externalProtos = await glob('node_modules/@diia-inhouse/**/proto/**/*.proto')
+        const externalProtos = await glob('node_modules/@kant2002-diia-inhouse/**/proto/**/*.proto')
         const externalProtosPaths = uniq(externalProtos.map((value) => value.substring(0, value.lastIndexOf('/'))))
         const myProtosDir = 'proto'
         const services = this.envService.getVar<string[]>('GRPC_SERVICES', 'object')

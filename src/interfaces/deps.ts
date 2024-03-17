@@ -1,9 +1,9 @@
 import { AsyncLocalStorage } from 'async_hooks'
 
-import { MetricsService } from '@diia-inhouse/diia-metrics'
-import { EnvService } from '@diia-inhouse/env'
-import { AlsData, Logger } from '@diia-inhouse/types'
-import { AppValidator } from '@diia-inhouse/validators'
+import { MetricsService } from '@kant2002-diia-inhouse/diia-metrics'
+import { EnvService } from '@kant2002-diia-inhouse/env'
+import { AlsData, Logger } from '@kant2002-diia-inhouse/types'
+import { AppValidator } from '@kant2002-diia-inhouse/validators'
 
 import ActionFactory from '../actionFactory'
 import { GrpcClientFactory } from '../grpc/grpcClient'

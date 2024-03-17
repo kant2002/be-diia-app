@@ -8,9 +8,9 @@ import { camelCase, upperFirst } from 'lodash'
 import { singular } from 'pluralize'
 import { Class } from 'type-fest'
 
-import { Counter, MetricsService } from '@diia-inhouse/diia-metrics'
-import type { Queue } from '@diia-inhouse/diia-queue'
-import { EnvService } from '@diia-inhouse/env'
+import { Counter, MetricsService } from '@kant2002-diia-inhouse/diia-metrics'
+import type { Queue } from '@kant2002-diia-inhouse/diia-queue'
+import { EnvService } from '@kant2002-diia-inhouse/env'
 import {
     AlsData,
     Logger,
@@ -19,9 +19,9 @@ import {
     OnDestroy,
     OnInit,
     OnRegistrationsFinished,
-} from '@diia-inhouse/types'
-import { guards } from '@diia-inhouse/utils'
-import { AppValidator } from '@diia-inhouse/validators'
+} from '@kant2002-diia-inhouse/types'
+import { guards } from '@kant2002-diia-inhouse/utils'
+import { AppValidator } from '@kant2002-diia-inhouse/validators'
 
 import ActionFactory from './actionFactory'
 import { GrpcService } from './grpc'
@@ -57,7 +57,7 @@ export class Application<TContext extends ServiceContext> {
 
     constructor(
         private readonly serviceName: string,
-        loggerPkg = '@diia-inhouse/diia-logger',
+        loggerPkg = '@kant2002-diia-inhouse/diia-logger',
     ) {
         this.container = createContainer<BaseDeps & DepsType<TContext>>({ injectionMode: InjectionMode.CLASSIC, strict: true }).register({
             serviceName: asValue(this.serviceName),
@@ -203,7 +203,7 @@ export class Application<TContext extends ServiceContext> {
 
         let redisDeps = {}
         if (config.store || config.redis) {
-            const { CacheService, PubSubService, RedlockService, StoreService } = require('@diia-inhouse/redis')
+            const { CacheService, PubSubService, RedlockService, StoreService } = require('@kant2002-diia-inhouse/redis')
 
             redisDeps = {
                 ...(config.store && {
@@ -230,7 +230,7 @@ export class Application<TContext extends ServiceContext> {
                 EventBus,
                 Task,
                 QueueConnectionType,
-            } = require('@diia-inhouse/diia-queue')
+            } = require('@kant2002-diia-inhouse/diia-queue')
 
             this.asyncCommunicationClasses.push(ExternalCommunicator, ExternalEventBus, ScheduledTask, EventBus, Task)
 
